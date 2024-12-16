@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-pink-200 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">Expense Manager</a>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Contact</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600">Tracking Manager</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-10 p-4 bg-white rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-6 text-center">Expense Breakdown</h1>
+        <div class="flex justify-center">
+            <canvas id="expenseChart" width="400" height="400"></canvas>
+        </div>
+
+        <form id="updateForm" class="mt-6">
+            <h2 class="text-xl font-semibold mb-4">Update Expenses</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="food" class="block text-gray-700">Food:</label>
+                    <input type="number" id="food" class="w-full px-3 py-2 border rounded-md" placeholder="Enter food expense">
+                </div>
+                <div>
+                    <label for="rent" class="block text-gray-700">Rent:</label>
+                    <input type="number" id="rent" class="w-full px-3 py-2 border rounded-md" placeholder="Enter rent expense">
+                </div>
+                <div>
+                    <label for="travel" class="block text-gray-700">Travelling:</label>
+                    <input type="number" id="travel" class="w-full px-3 py-2 border rounded-md" placeholder="Enter travelling expense">
+                </div>
+                <div>
+                    <label for="savings" class="block text-gray-700">Savings:</label>
+                    <input type="number" id="savings" class="w-full px-3 py-2 border rounded-md" placeholder="Enter savings amount">
+                </div>
+            </div>
+            <button type="button" id="updateChart" class="mt-4 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">Update Chart</button>
+        </form>
+    </div>
+    
+
+    <script>
+        const ctx = document.getElementById('expenseChart').getContext('2d');
+        let expenseChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Food', 'Rent', 'Travelling', 'Savings'],
+                datasets: [{
+                    label: 'Expenses',
+                    data: [300, 500, 100, 200],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                return tooltipItem.label + ': $' + tooltipItem.raw;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        document.getElementById('updateChart').addEventListener('click', () => {
+            const food = parseFloat(document.getElementById('food').value) || 0;
+            const rent = parseFloat(document.getElementById('rent').value) || 0;
+            const travel = parseFloat(document.getElementById('travel').value) || 0;
+            const savings = parseFloat(document.getElementById('savings').value) || 0;
+
+            expenseChart.data.datasets[0].data = [food, rent, travel, savings];
+            expenseChart.update();
+        });
+    </script>
+</body>
+</html>
