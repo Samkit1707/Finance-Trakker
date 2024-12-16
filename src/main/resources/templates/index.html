@@ -1,550 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 
     - primary meta tag
   -->
-    <title>Finanace Trakker</title>
-    <meta name="title" content="Track and Save" />
-    <meta
-      name="description"
-      content="This is an trakking website made by samkit and satyam "
-    />
+  <title>Finanace Trakker</title>
+  <meta name="title" content="Track and Save" />
+  <meta name="description" content="This is an trakking website made by samkit and satyam " />
 
-    <!-- 
+  <!-- 
     - favicon
   -->
-    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-    <!-- 
+  <!-- 
     - custom css link
   -->
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- 
+  <!-- 
     - google font link
   -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet" />
 
-    <!-- 
+  <!-- 
     - preload images
   -->
-    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
-    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
-    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
-    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
-    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
-  </head>
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+</head>
 
-  <body id="top">
-    <header class="header" data-header>
-      <nav class="changenav">
-        <img src="logo.jpg.png" alt="EduWeb logo" />
-        <a href="#" class="logo"><h1>Finance Trakker </h1> </a>
-      </nav>
-      <div class="container">
-        <nav class="navbar" data-navbar>
-          <div class="wrapper">
-            <!-- <a href="#" class="logo">
+<body id="top">
+  <header class="header" data-header>
+    <nav class="changenav">
+      <img src="image/logo.jpeg" alt="EduWeb logo" />
+      <a href="#" class="logo">
+        <h1>Finance Trakker </h1>
+      </a>
+    </nav>
+    <div class="container">
+      <nav class="navbar" data-navbar>
+        <div class="wrapper">
+          <!-- <a href="#" class="logo">
             <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
           </a> -->
 
-            <!-- <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <!-- <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button> -->
-          </div>
-
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#about" class="navbar-link" data-nav-link>Budget Manager</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#courses" class="navbar-link" data-nav-link
-                >Expance Trakker </a
-              >
-            </li>
-
-            <li class="navbar-item">
-              <a href="charts" class="navbar-link" data-nav-link
-                >Charts Goals </a
-              >
-            </li>
-
-            <li class="navbar-item">
-              <a href="contact" class="navbar-link" data-nav-link>Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="header-actions">
-          <button
-            class="header-action-btn"
-            aria-label="toggle search"
-            title="Search"
-          >
-            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-          </button>
-
-          <a href="login" class="btn has-before">
-            <span class="span">Sign In</span>
-
-            <ion-icon
-              name="arrow-forward-outline"
-              aria-hidden="true"
-            ></ion-icon>
-          </a>
-          <a href="register" class="btn has-before">
-            <span class="span">Sign Up</span>
-
-            <ion-icon
-              name="arrow-forward-outline"
-              aria-hidden="true"
-            ></ion-icon>
-          </a>
-
-          <button
-            class="header-action-btn"
-            aria-label="open menu"
-            data-nav-toggler
-          >
-            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-          </button>
         </div>
 
-        <div class="overlay" data-nav-toggler data-overlay></div>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="/" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="budget" class="navbar-link" data-nav-link>Budget Manager</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#courses" class="navbar-link" data-nav-link>Expance Trakker </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="charts" class="navbar-link" data-nav-link>Charts Goals </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="login" class="btn has-before">
+          <span class="span">Sign In</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+        <a href="register" class="btn has-before">
+          <span class="span">Sign Up</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
       </div>
-    </header>
 
-    <main>
-      <article>
-        <section
-          class="section hero has-bg-image"
-          id="home"
-          aria-label="home"
-          style="background-image: url('./assets/images/hero-bg.svg')"
-        >
-          <div class="container">
-            <div class="hero-content">
-              <h1 class="h1 section-title">
-                The Best Platform to <span class="span">Track</span> and Spend 
-              </h1>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
 
-              <p class="hero-text">
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit.
-              </p>
+  <main>
+    <article>
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.svg')">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 section-title">
+              The Best Platform to <span class="span">Track</span> and Spend
+            </h1>
 
-              <a href="#" class="btn has-before">
-                <span class="span">Track your expanses</span>
+            <p class="hero-text">
+              Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+              officia deserunt mollit.
+            </p>
 
-                <ion-icon
-                  name="arrow-forward-outline"
-                  aria-hidden="true"
-                ></ion-icon>
-              </a>
-            </div>
+            <a href="#" class="btn has-before">
+              <span class="span">Track your expanses</span>
 
-            <figure class="hero-banner">
-              <div class="img-holder one" style="--width: 270; --height: 300">
-                <img
-                  src="photo1.jpg"
-                  width="270"
-                  height="300"
-                  alt="hero banner"
-                  class="img-cover"
-                />
-              </div>
-
-              <div class="img-holder two" style="--width: 240; --height: 370">
-                <img
-                  src="https://media.istockphoto.com/id/1324689337/photo/indian-village-government-school-girls-operating-laptop-computer-system-at-rural-area-in-india.jpg?s=612x612&w=0&k=20&c=yXYV73UwR6ZXOhcxv96TVNLH_A3AvL55qjaA3BRSDPY="
-                  width="240"
-                  height="370"
-                  alt="hero banner"
-                  class="img-cover"
-                />
-              </div>
-
-              <img
-                src="https://media.istockphoto.com/id/1148232026/photo/computer-teacher-assisting-a-student.jpg?s=612x612&w=0&k=20&c=voWznZQOhgvvhW6lr_2Wzu89JWrQMEmd2frF6xNrWAE="
-                width="380"
-                height="190"
-                alt=""
-                class="shape hero-shape-1"
-              />
-            </figure>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
           </div>
-        </section>
-              <img
-                src="./assets/images/about-shape-4.svg"
-                width="100"
-                height="100"
-                loading="lazy"
-                alt=""
-                class="shape about-shape-4"
-              />
+
+          <figure class="hero-banner">
+            <div class="img-holder one" style="--width: 270; --height: 300">
+              <img src="image/home1.jpg" width="270" height="300" alt="hero banner" class="img-cover" />
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370">
+              <img src="image/img2.jpeg" width="240" height="370" alt="hero banner" class="img-cover" />
+            </div>
+
+            <img src="image/img3.jpeg" width="380" height="190" alt="" class="shape hero-shape-1" />
+          </figure>
+        </div>
+      </section>
+      <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+        class="shape about-shape-4" />
+      </div>
+      </div>
+      </section>
+
+      <!--Trakker-->
+      <!-- <section class="main-content" id="tracker">
+        <div class="head-text">
+          <h1>Access Your Personal Finance Tracker</h1>
+          <div class="under-head-text"></div>
+        </div>
+        <br />
+
+        <div class="tracker-part">
+          <div class="tracker-balance">
+            Current Balance: <span id="balance" class="current-balance"></span>
+          </div>
+
+          <div class="currency-filter">
+            <div class="filter-left">
+              <label for="currency">Select Currency:</label>
+              <select id="currency" onchange="updateBalance()">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="INR" selected>INR</option>
+              </select>
+            </div>
+            <div class="filter-right">
+              <label for="text" class="date-box">Choose Date:</label>
+              <input type="date" id="date" placeholder="Date" />
             </div>
           </div>
-        </section>
 
-        <!--Trakker-->
-        <section class="main-content" id="tracker">
-            <div class="head-text">
-              <h1>Access Your Personal Finance Tracker</h1>
-              <div class="under-head-text"></div>
-            </div>
-            <br />
-      
-            <div class="tracker-part">
-              <div class="tracker-balance">
-                Current Balance: <span id="balance" class="current-balance"></span>
-              </div>
-      
-              <div class="currency-filter">
-                <div class="filter-left">
-                  <label for="currency">Select Currency:</label>
-                  <select id="currency" onchange="updateBalance()">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="INR" selected>INR</option>
-                  </select>
-                </div>
-                <div class="filter-right">
-                  <label for="text" class="date-box">Choose Date:</label>
-                  <input type="date" id="date" placeholder="Date" />
-                </div>
-              </div>
-      
-              <div class="transaction-form">
-                <input type="text" id="description" placeholder="Description" />
-                <input type="number" id="amount" placeholder="Amount" />
-                <select id="type">
-                  <option value="income">Income</option>
-                  <option value="expense">Expense</option>
-                </select>
-                <button onclick="addTransaction()">Add Transaction</button>
-                <button onclick="handleDownload()">Export</button>
-              </div>
-              <div class="table-part" id="table-part">
-                <table id="transaction-table">
-                  <tr>
-                    <th>Date</th>
-                    <th>Description</th>
-                    <th>Amount</th>
-                    <th>Type</th>
-                    <th>Action</th>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </section>
+          <div class="transaction-form">
+            <input type="text" id="description" placeholder="Description" />
+            <input type="number" id="amount" placeholder="Amount" />
+            <select id="type">
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+            <button onclick="addTransaction()">Add Transaction</button>
+            <button onclick="handleDownload()">Export</button>
+          </div>
+          <div class="table-part" id="table-part">
+            <table id="transaction-table">
+              <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Type</th>
+                <th>Action</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section> -->
 
-        <!-- TEAM -->
-	<div class="diffSection" id="team_section">
-		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p></center>
-		<div class="totalcard">
-			<div class="card">
-				<center><img src="2.jpeg"></center>
-				<center><div class="card-title">Samkit Jain</div>
-				<div id="detail">
-					<p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating curiosity, he will continue the learning process as long as he lives “</p>
-					<div class="duty"></div>
-					<a href="https://www.linkedin.com/in/samkit-jain-13567620a/" target="_blank"><button class="btn-roshan">Follow +</button></a>
-				</div>
-				</center>
-			</div>
-			<div class="card">
-				<center><img src="7.jpg"></center>
-				<center><div class="card-title">Satyam Dubey</div>
-				<div id="detail">
-					<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
-					<div class="duty"></div>
-					<a href="https://www.linkedin.com/in/satyam-dubey-97baaa231/" target="_blank"><button class="btn-akhil">Follow +</button></a>
-				</div>
-				</center>
-			</div>
-		</div>
-	</div>
-        <!-- 
+      <!-- TEAM -->
+      <div class="diffSection" id="team_section">
+        <center>
+          <p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p>
+        </center>
+        <div class="totalcard">
+          <div class="card">
+            <center><img src="image/samkit.jpeg"></center>
+            <center>
+              <div class="card-title">Samkit Jain</div>
+              <div id="detail">
+                <p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating
+                  curiosity, he will continue the learning process as long as he lives “</p>
+                <div class="duty"></div>
+                <a href="https://www.linkedin.com/in/samkit-jain-13567620a/" target="_blank"><button
+                    class="btn-roshan">Follow +</button></a>
+              </div>
+            </center>
+          </div>
+          <div class="card">
+            <center><img src="image/satyam.jpeg"></center>
+            <center>
+              <div class="card-title">Satyam Dubey</div>
+              <div id="detail">
+                <p>“ Real education should consist of drawing the goodness and the best out of our own students. What
+                  better books can there be than the book of humanity “</p>
+                <div class="duty"></div>
+                <a href="https://www.linkedin.com/in/satyam-dubey-97baaa231/" target="_blank"><button
+                    class="btn-akhil">Follow +</button></a>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+      <!-- 
         - #VIDEO
       -->
 
-        <section
-          class="video has-bg-image"
-          aria-label="video"
-          style="background-image: url('./assets/images/video-bg.png')"
-        >
-          <div class="container">
-            <div class="video-card">
-              <div
-                class="video-banner img-holder has-after"
-                style="--width: ; --height: "
-              >
-                <img
-                  src="./assets/images/video-banner.jpg"
-                  width="970"
-                  height="550"
-                  loading="lazy"
-                  alt="video banner"
-                  class="img-cover"
-                />
+      <section class="video has-bg-image" aria-label="video"
+        style="background-image: url('./assets/images/video-bg.png')">
+        <div class="container">
+          <div class="video-card">
+            <div class="video-banner img-holder has-after" style="--width: ; --height: ">
+              <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
+                class="img-cover" />
 
-                <button class="play-btn" aria-label="play video">
-                  <ion-icon name="play" aria-hidden="true"></ion-icon>
-                </button>
-              </div>
-
-              <img
-                src="./assets/images/video-shape-1.png"
-                width="1089"
-                height="605"
-                loading="lazy"
-                alt=""
-                class="shape video-shape-1"
-              />
-
-              <img
-                src="./assets/images/video-shape-2.png"
-                width="158"
-                height="174"
-                loading="lazy"
-                alt=""
-                class="shape video-shape-2"
-              />
+              <button class="play-btn" aria-label="play video">
+                <ion-icon name="play" aria-hidden="true"></ion-icon>
+              </button>
             </div>
-          </div>
-        </section>
 
-        <!-- 
+            <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
+              class="shape video-shape-1" />
+
+            <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
+              class="shape video-shape-2" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 
         - #STATE
       -->
 
-        <section class="section stats" aria-label="stats">
-          <div class="container">
-            <ul class="grid-list">
-              <li>
-                <div class="stats-card" style="--color: 170, 75%, 41%">
-                  <h3 class="card-title">29.3k</h3>
+      <section class="section stats" aria-label="stats">
+        <div class="container">
+          <ul class="grid-list">
+            <li>
+              <div class="stats-card" style="--color: 170, 75%, 41%">
+                <h3 class="card-title">29.3k</h3>
 
-                  <p class="card-text">Total Income</p>
-                </div>
-              </li>
+                <p class="card-text">Total Income</p>
+              </div>
+            </li>
 
-              <li>
-                <div class="stats-card" style="--color: 351, 83%, 61%">
-                  <h3 class="card-title">32.4K</h3>
+            <li>
+              <div class="stats-card" style="--color: 351, 83%, 61%">
+                <h3 class="card-title">32.4K</h3>
 
-                  <p class="card-text">Savings</p>
-                </div>
-              </li>
+                <p class="card-text">Savings</p>
+              </div>
+            </li>
 
-              <li>
-                <div class="stats-card" style="--color: 260, 100%, 67%">
-                  <h3 class="card-title">100%</h3>
+            <li>
+              <div class="stats-card" style="--color: 260, 100%, 67%">
+                <h3 class="card-title">100%</h3>
 
-                  <p class="card-text">Expanses</p>
-                </div>
-              </li>
+                <p class="card-text">Expanses</p>
+              </div>
+            </li>
 
-              <li>
-                <div class="stats-card" style="--color: 42, 94%, 55%">
-                  <h3 class="card-title">3544</h3>
+            <li>
+              <div class="stats-card" style="--color: 42, 94%, 55%">
+                <h3 class="card-title">3544</h3>
 
-                  <p class="card-text">Top purchase</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </article>
-    </main>
+                <p class="card-text">Top purchase</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
 
-    <!-- 
+  <!-- 
     - #FOOTER
   -->
 
-    <footer
-      class="footer"
-      style="background-image: url('./assets/images/footer-bg.png')"
-    >
-      <div class="footer-top section">
-        <div class="container grid-list">
-          <div class="footer-brand">
-            <a href="#" class="logo">
-              <img
-                src="./assets/images/logo-light.svg"
-                width="162"
-                height="50"
-                alt="EduWeb logo"
-              />
-            </a>
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="footer-top section">
+      <div class="container grid-list">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="162" height="50" alt="EduWeb logo" />
+          </a>
 
-            <p class="footer-brand-text">
-              Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor
-              incidid unt labore dolore.
-            </p>
+          <p class="footer-brand-text">
+            Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor
+            incidid unt labore dolore.
+          </p>
 
-            <div class="wrapper">
-              <span class="span">Add:</span>
+          <div class="wrapper">
+            <span class="span">Add:</span>
 
-              <address class="address">mumbai</address>
-            </div>
-
-            <div class="wrapper">
-              <span class="span">Call:</span>
-
-              <a href="tel:+011234567890" class="footer-link"
-                >+01 123 4567 890</a
-              >
-            </div>
-
-            <div class="wrapper">
-              <span class="span">Email:</span>
-
-              <a href="mailto:info@eduweb.com" class="footer-link"
-                >trakker@gmail.com</a
-              >
-            </div>
+            <address class="address">mumbai</address>
           </div>
 
-          
-          <ul class="footer-list">
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+011234567890" class="footer-link">+01 123 4567 890</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:info@eduweb.com" class="footer-link">trakker@gmail.com</a>
+          </div>
+        </div>
+
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+
+
+          <li>
+            <a href="#" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Coming Soon</a>
+          </li>
+        </ul>
+
+        <div class="footer-list">
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to get more updates
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field" />
+
+            <button type="submit" class="btn has-before">
+              <span class="span">check it out </span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
             <li>
-              <p class="footer-list-title">Links</p>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Contact Us</a>
-            </li>
-
-          
-
-            <li>
-              <a href="#" class="footer-link">FAQ's</a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Sign In/Registration</a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Coming Soon</a>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
             </li>
           </ul>
-
-          <div class="footer-list">
-            <p class="footer-list-title">Contacts</p>
-
-            <p class="footer-list-text">
-              Enter your email address to get more updates
-            </p>
-
-            <form action="" class="newsletter-form">
-              <input
-                type="email"
-                name="email_address"
-                placeholder="Your email"
-                required
-                class="input-field"
-              />
-
-              <button type="submit" class="btn has-before">
-                <span class="span">check it out </span>
-
-                <ion-icon
-                  name="arrow-forward-outline"
-                  aria-hidden="true"
-                ></ion-icon>
-              </button>
-            </form>
-
-            <ul class="social-list">
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="copyright">
-            Copyright 2024 All Rights Reserved by
-            <a href="#" class="copyright-link">financetrakker</a>
-          </p>
-        </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          Copyright 2024 All Rights Reserved by
+          <a href="#" class="copyright-link">financetrakker</a>
+        </p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- 
+  <!-- 
     - #BACK TO TOP
   -->
 
-    <a
-      href="#top"
-      class="back-top-btn"
-      aria-label="back top top"
-      data-back-top-btn
-    >
-      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-    </a>
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
 
-    <!-- 
+  <!-- 
     - custom js link
   -->
-    <script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 
-    <!-- 
+  <!-- 
     - ionicon link
   -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

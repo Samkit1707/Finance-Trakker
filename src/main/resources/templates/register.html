@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://thymeleaf.org">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +13,23 @@
           <div class="text">
             <h1>Sikhoo India</h1>
             <p>Enhance Your Personality</p>
-            <p>Learnig & Jobs Opportunities</p>
+            <p>Learning & Jobs Opportunities</p>
           </div>
-          <form id="registrationForm" action="#" th:action="@{/save}" th:object="${user}" method="POST">
+          <form id="registrationForm" action="/save" method="POST">
               <header>Register Yourself</header>
-              <input type="text" th:field="*{name}" placeholder="Full Name" class="form-control mb-4 col-4"> 
-              <input type="text" th:field="*{email}" placeholder=" Email" class="form-control mb-4 col-4">
-              <input type="text" th:field="*{password}" placeholder="create password" class="form-control mb-4 col-4">
-              <input type="text" th:field="*{role}" placeholder="Find Role" class="form-control mb-4 col-4">
-              <input type="text" th:field="*{mobile}" placeholder="Mobile Number" class="form-control mb-4 col-4">
+              <input type="text" name="name" placeholder="Full Name" class="form-control mb-4 col-4"> 
+              <input type="email" name="email" placeholder="Email" class="form-control mb-4 col-4">
+              <input type="password" name="password" placeholder="Create Password" class="form-control mb-4 col-4">
+            
+              <input type="text" name="mobile" placeholder="Mobile Number" class="form-control mb-4 col-4">
       
-              
             <div class="link">
-                <button type="submit" class="register">register</button>
+                <button type="submit" class="register">Register</button>
             </div>
             <hr>
-            <h3>If you registered Already, login below !</h3>
+            <h3>If you are already registered, login below!</h3>
             <div class="button">
-              <a href="userlogin">SignIn</a>
+              <a href="userlogin">Sign In</a>
             </div>
           </form>
         </div>
@@ -54,7 +53,7 @@
 
     // JavaScript to handle OK button click and redirect to login page
     document.getElementById('okButton').addEventListener('click', function() {
-        window.location.href = 'login'; // Change 'login.html' to the actual URL of your login page
+        window.location.href = 'login'; // Change 'login' to the actual URL of your login page
     });
 </script>
 
