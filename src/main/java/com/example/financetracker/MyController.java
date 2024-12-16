@@ -35,6 +35,10 @@ public class MyController {
     public String contact() {
         return "contact"; 
     }
+    @GetMapping("/budget")
+    public String budget() {
+        return "trakker"; 
+    }
 
     // Register user
     // @PostMapping("/register")
