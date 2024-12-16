@@ -15,8 +15,12 @@ public class MyController {
     // private UserService userService;
 
     @GetMapping("/")
-    public String home() {
+    public String homemain() {
         return "index"; 
+    }
+    @GetMapping("/home")
+    public String home() {
+        return "home"; 
     }
 
     @GetMapping("/charts")

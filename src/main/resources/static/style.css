@@ -324,15 +324,16 @@
   }
   .changenav{
     display: grid;
-    grid-template-columns: 0.1fr 2fr 1fr;
+    grid-template-columns: 0.2fr 2fr 1fr;
     margin-bottom: 20px;
   }
   .changenav img{
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 61px;
     border-radius: 200px;
     mix-blend-mode: color-burn;
     background-color: none;
+    margin-top: 17px;
   }
   .logo h1{
     display: flex;
