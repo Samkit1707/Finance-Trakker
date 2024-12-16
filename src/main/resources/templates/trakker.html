@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             background-color: #ffcccb;
@@ -82,18 +83,78 @@
     </section>
 
     <script>
+        let transactions = [];
+
         function updateBalance() {
-            // Function to update balance based on selected currency
+            const currency = document.getElementById('currency').value;
+            let balance = transactions.reduce((acc, transaction) => {
+                return transaction.type === 'income' ? acc + transaction.amount : acc - transaction.amount;
+            }, 0);
+
+            document.getElementById('balance').textContent = `${balance.toFixed(2)} ${currency}`;
         }
 
         function addTransaction() {
-            // Function to add a new transaction
+            const date = document.getElementById('date').value;
+            const description = document.getElementById('description').value;
+            const amount = parseFloat(document.getElementById('amount').value);
+            const type = document.getElementById('type').value;
+
+            if (!date || !description || isNaN(amount)) {
+                alert('Please fill out all fields.');
+                return;
+            }
+
+            const transaction = { date, description, amount, type };
+            transactions.push(transaction);
+            renderTransactions();
+            updateBalance();
+        }
+
+        function deleteTransaction(index) {
+            transactions.splice(index, 1);
+            renderTransactions();
+            updateBalance();
+        }
+
+        function renderTransactions() {
+            const table = document.getElementById('transaction-table');
+            table.innerHTML = `
+                <tr>
+                    <th class="py-2 px-4 border-b text-pink-800">Date</th>
+                    <th class="py-2 px-4 border-b text-pink-800">Description</th>
+                    <th class="py-2 px-4 border-b text-pink-800">Amount</th>
+                    <th class="py-2 px-4 border-b text-pink-800">Type</th>
+                    <th class="py-2 px-4 border-b text-pink-800">Action</th>
+                </tr>`;
+
+            transactions.forEach((transaction, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="py-2 px-4 border-b">${transaction.date}</td>
+                    <td class="py-2 px-4 border-b">${transaction.description}</td>
+                    <td class="py-2 px-4 border-b">${transaction.amount.toFixed(2)}</td>
+                    <td class="py-2 px-4 border-b">${transaction.type}</td>
+                    <td class="py-2 px-4 border-b">
+                        <button onclick="deleteTransaction(${index})" class="bg-red-500 text-white px-2 py-1 rounded">Delete</button>
+                    </td>`;
+                table.appendChild(row);
+            });
         }
 
         function handleDownload() {
-            // Function to handle export of transactions
+            const csvContent = "data:text/csv;charset=utf-8," +
+                "Date,Description,Amount,Type\n" +
+                transactions.map(t => `${t.date},${t.description},${t.amount},${t.type}`).join("\n");
+
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement('a');
+            link.setAttribute('href', encodedUri);
+            link.setAttribute('download', 'transactions.csv');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
-     <script src="script.js" defer></script>
 </body>
 </html>
