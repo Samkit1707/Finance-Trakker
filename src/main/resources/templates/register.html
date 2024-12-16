@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sikhoo India</title>
+<link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <div class="container flex">
+        <div class="facebook-page flex">
+          <div class="text">
+            <h1>Sikhoo India</h1>
+            <p>Enhance Your Personality</p>
+            <p>Learnig & Jobs Opportunities</p>
+          </div>
+          <form id="registrationForm" action="#" th:action="@{/save}" th:object="${user}" method="POST">
+              <header>Register Yourself</header>
+              <input type="text" th:field="*{name}" placeholder="Full Name" class="form-control mb-4 col-4"> 
+              <input type="text" th:field="*{email}" placeholder=" Email" class="form-control mb-4 col-4">
+              <input type="text" th:field="*{password}" placeholder="create password" class="form-control mb-4 col-4">
+              <input type="text" th:field="*{role}" placeholder="Find Role" class="form-control mb-4 col-4">
+              <input type="text" th:field="*{mobile}" placeholder="Mobile Number" class="form-control mb-4 col-4">
+      
+              
+            <div class="link">
+                <button type="submit" class="register">register</button>
+            </div>
+            <hr>
+            <h3>If you registered Already, login below !</h3>
+            <div class="button">
+              <a href="userlogin">SignIn</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <h2>Thank you for registering!</h2>
+        <p>Welcome to our platform.</p>
+        <button class="button" id="okButton">OK</button>
+    </div>
+</div>
+
+<script>
+    // JavaScript to show the popup after form submission
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        var popup = document.getElementById('popup');
+        popup.style.display = 'flex';
+    });
+
+    // JavaScript to handle OK button click and redirect to login page
+    document.getElementById('okButton').addEventListener('click', function() {
+        window.location.href = 'login'; // Change 'login.html' to the actual URL of your login page
+    });
+</script>
+
+</body>
+</html>
