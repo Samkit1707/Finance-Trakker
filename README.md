@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # **Finance Trakker**
 
 A modern, responsive website designed to help everyone manage their finances effectively and start saving. The platform offers features like daily expense logging, categorized spending charts, and savings goal tracking. Built using a robust tech stack and best practices in web development.
@@ -143,3 +144,5 @@ For any inquiries or feedback, please reach out:
   GitHub: [satyam91s](https://github.com/satyam91s)  
 
 ---
+=======
+>>>>>>> efa7493c8d8a20c711eb9a8ef46017786eae0fe1
