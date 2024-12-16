@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        .charts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .chart {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 48%;
+        }
+        .chart h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .chart {
+                width: 100%;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-lg font-bold">Finance Tracker</div>
+            <div class="space-x-4">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Home</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Finance Tracker</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Finance Manager</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h1>Finance Tracker</h1>
+        </div>
+        <div class="charts">
+            <div class="chart">
+                <h2>Food</h2>
+                <canvas id="foodChart"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Entertainment</h2>
+                <canvas id="entertainmentChart"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Travelling</h2>
+                <canvas id="travellingChart"></canvas>
+            </div>
+            <div class="chart">
+                <h2>Rent</h2>
+                <canvas id="rentChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="charts.js"></script>
+</body>
+</html>
