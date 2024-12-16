@@ -22,6 +22,10 @@ public class MyController {
     public String home() {
         return "home"; 
     }
+    @GetMapping("/expanse")
+    public String expanse() {
+        return "expanse"; 
+    }
 
     @GetMapping("/charts")
     public String charts() {
