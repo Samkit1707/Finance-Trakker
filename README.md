@@ -134,11 +134,11 @@ Feel free to contribute and join the project!
 For any inquiries or feedback, please reach out:  
 
 - **Samkit Jain**  
-  Email: samkit.jain@example.com  
+  Email: samkit484@gmail.com 
   GitHub: [Samkit1707](https://github.com/Samkit1707)  
 
 - **Satyam Dubey**  
-  Email: satyam.dubey@example.com  
+  Email: satyam91s@gmail.com  
   GitHub: [satyam91s](https://github.com/satyam91s)  
 
 ---
