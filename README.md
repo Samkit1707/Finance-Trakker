@@ -109,15 +109,28 @@ Make sure the following are installed on your system:
 
 ## **Screenshots**
 
-1. **Login Page**  
+1. **Home Page**  
    ![Screenshot 2024-12-16 203850](https://github.com/user-attachments/assets/b6eaa185-1b04-47c3-9fe4-bd564e9d0592)
 
 
 2. **Dashboard with Charts**  
-   *[Add Screenshot]*  
+   ![Screenshot 2024-12-16 203504](https://github.com/user-attachments/assets/8affc376-2797-43c5-bbe0-fd0cd9ccaad3)
 
-3. **Expense Logging Page**  
-   *[Add Screenshot]*  
+   
+3. **Finance Tracker Dashboard**  
+   ![Screenshot 2024-12-16 203911](https://github.com/user-attachments/assets/6964587a-a455-47b8-b0c3-75c9159e8b73)
+
+
+4. **Expense Charts**  
+   ![Screenshot 2024-12-16 204015](https://github.com/user-attachments/assets/7bc3252c-346f-45d6-9566-e5670f33c778)
+
+   
+5. **Creators**  
+   ![Screenshot 2024-12-16 203735](https://github.com/user-attachments/assets/e5f58451-0e6d-4cb9-9a15-7ea011adfe24)
+
+   
+6. **Contact Us**  
+   ![Screenshot 2024-12-16 203944](https://github.com/user-attachments/assets/77f0ba1e-8fe3-49f5-856b-5cb2073a3a5e)
 
 ---
 
