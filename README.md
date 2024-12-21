@@ -110,7 +110,8 @@ Make sure the following are installed on your system:
 ## **Screenshots**
 
 1. **Login Page**  
-   *[Add Screenshot]*  
+   ![Screenshot 2024-12-16 203850](https://github.com/user-attachments/assets/b6eaa185-1b04-47c3-9fe4-bd564e9d0592)
+
 
 2. **Dashboard with Charts**  
    *[Add Screenshot]*  
